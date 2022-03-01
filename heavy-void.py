@@ -75,9 +75,6 @@ def fill_with_void(path, secure = False, both_FAT = False, debbug = False):
         size_fat = get_size_fat(disk, debugg=debbug)
         size_sector = get_size_sector(disk, debugg=debbug)
       
-        
-    
-    
     if secure:
         stop = True
     if both_FAT:
@@ -177,6 +174,6 @@ def clean_void(path, debugg = False):
 if __name__ == '__main__':
     #/dev/sdb1
     path = "/dev/sdc1"
-    fill_with_void(path, hide=True)
+    fill_with_void(path)
     #quick_clean_void(path)
     
